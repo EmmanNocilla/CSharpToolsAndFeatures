@@ -23,10 +23,8 @@ namespace DelegatesExample
         {
             List<Student> students = GetStudents(); 
 
-            // 1. Print each student's name.
             ProcessStudents(students, s => Console.WriteLine(s.Name));
 
-            // 2. Check if a student has passed.
             Func<Student, bool> hasPassed = s => s.Grade >= 50;
             foreach (var student in students)
             {
@@ -36,7 +34,6 @@ namespace DelegatesExample
                 }
             }
 
-            // 3. Send an email to students who have a birthday today.
             ProcessStudents(students, s =>
             {
                 if (s.Birthday.Date == DateTime.Today)

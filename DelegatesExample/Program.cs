@@ -26,6 +26,7 @@ namespace DelegatesExample
             ProcessStudents(students, s => Console.WriteLine(s.Name));
 
             Func<Student, bool> hasPassed = s => s.Grade >= 50;
+
             foreach (var student in students)
             {
                 if (hasPassed(student))

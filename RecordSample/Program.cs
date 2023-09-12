@@ -18,6 +18,8 @@ namespace DelegatesExample
         // Another derived record
         record Rectangle(string Name, double Width, double Height) : Shape(Name);
         #endregion
+
+        record TransactionRec(Guid transactionId, decimal amount, DateTime date, string sender, string receiver);
         public static void Main()
         {         
 

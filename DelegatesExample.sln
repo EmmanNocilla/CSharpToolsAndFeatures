@@ -7,6 +7,10 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DelegatesExample", "Delegat
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RecordSample", "RecordSample\RecordSample.csproj", "{A3AB787E-BDB5-4017-9FAC-6D5BC5D07C5F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GenericAttributeSample", "GenericAttributeSample\GenericAttributeSample.csproj", "{12E4FE98-C55C-4854-8059-1FA004001946}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PatternMatchingSample", "PatternMatchingSample\PatternMatchingSample.csproj", "{A669BE43-6B87-49DC-8454-8BA2ED0826F0}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +25,14 @@ Global
 		{A3AB787E-BDB5-4017-9FAC-6D5BC5D07C5F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A3AB787E-BDB5-4017-9FAC-6D5BC5D07C5F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A3AB787E-BDB5-4017-9FAC-6D5BC5D07C5F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{12E4FE98-C55C-4854-8059-1FA004001946}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{12E4FE98-C55C-4854-8059-1FA004001946}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{12E4FE98-C55C-4854-8059-1FA004001946}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{12E4FE98-C55C-4854-8059-1FA004001946}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A669BE43-6B87-49DC-8454-8BA2ED0826F0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A669BE43-6B87-49DC-8454-8BA2ED0826F0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A669BE43-6B87-49DC-8454-8BA2ED0826F0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A669BE43-6B87-49DC-8454-8BA2ED0826F0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

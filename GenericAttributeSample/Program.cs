@@ -15,13 +15,10 @@ void SerializeToJson(object obj)
     var attributes = obj.GetType().GetCustomAttributes(
                        typeof(JsonSerializerAttribute<>), inherit: false);  //Check for attribute in object
 
-    if (attributes.Length == 1
-        && attributes[0].GetType()
-             .GetGenericTypeDefinition() == typeof(JsonSerializerAttribute<>))
+    if (attributes.Length == 1)
     {
         var serializerType = attributes[0].GetType().GetGenericArguments()[0];
-        var serializer = Activator.CreateInstance(serializerType)
-            as IJsonSerializer;
+        var serializer = Activator.CreateInstance(serializerType) as IJsonSerializer;
         if (serializer is not null)
         {
             Console.WriteLine(serializer.Serialize(obj));
@@ -81,5 +78,5 @@ public class ProductJsonSerializer : IJsonSerializer
     }
 }
 
-[AttributeUsage(AttributeTargets.Class, AllowMultiple = false)]
+[AttributeUsage(AttributeTargets.Class)]
 public class JsonSerializerAttribute<T> : Attribute where T : IJsonSerializer { }

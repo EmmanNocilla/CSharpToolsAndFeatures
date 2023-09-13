@@ -7,5 +7,6 @@
         public decimal Price { get; set; }
         public string Description { get; set; }
         public bool IsArchived { get; set; }
+        public long TimeStamp { get; set; }
     }
 }
